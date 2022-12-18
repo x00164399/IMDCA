@@ -4,11 +4,238 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
     <title>Portfolio</title>
 </head>
 <body>
-    
 
-    
+  <!-- -------------------------------- Start Carousel -------------------------------- -->
+
+    <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100 h-50" src="images/image1.jpg" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100 h-50" src="images/image2.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100 h-50" src="images/image3.png" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!-- -------------------------------- End Carousel -------------------------------- -->
+    <!-- -------------------------------- Start Nav Bar -------------------------------- -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item ">
+            <a class="nav-link active" href="#aboutme">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#WorkExpierience">Work Experience</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#results">Results</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#moreinfo">More</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- -------------------------------- End Nav Bar -------------------------------- -->
+    <!-- -------------------------------- Start Main Body -------------------------------- -->
+
+    <div class="col-md-4 aboutme" id="aboutme">
+      <img class="pfp center" src="images/pfp.jpg">
+        <h1 class="Title1 font-weight-bold text-center">About Me</h1>
+        <p>Hello, My Name Is Viljamas Grumadas. I Am Currently A 4th Year 
+            Compter Science Student At Technological Univarity Dublin.</p>
+        <p>Through Out My Years In College I Have Learned A lot Of Diffrent Coding 
+            Languages And Have Done Different Projects</p>
+            <p>Information about me:</p>
+    </div>
+    <div class="col-md-4 projects" id="projects">
+        <h1 class="Title1 font-weight-bold text-center">Projects</h1>
+        <p class="font-weight-bold">1st Year project:</p>
+        <p>This was a group project. A straightforward HTML and CSS website was to be created by the trio. 
+          We developed a website with a restaurant theme. We divided the task and each contributed to the website in our own way.
+        </p>
+        <p class="font-weight-bold">2nd Year project:</p>
+        <p>This Project was an ecomerce website. I created this website using django and python. The website has a backend where the admin is able to 
+          add products, update quantity, delete products. They can also have control over user accounts reseting passwords or giving access to diffrent areas.
+          The website itself has basic functionality of a user being able to Login/signup, then they can go through all producst and add to cart and then they can check out and buy what they added to cart.
+        </p>
+        <p class="font-weight-bold">4th Year project:</p>
+        <p>I made a simple website that takes in a API and displays the information from the API on it. For this project
+          I used Blazor pages and C#. I also added a bit of styling to the page. <a href="https://purple-ground-0ee608603.2.azurestaticapps.net/">Link</a>
+        </p>
+          <p class="font-weight-bold">Current Project I Am Working on:</p>
+        <p>I am currently devloping a fitness/workout app on android studio and I am using Kotlin for the project. The project will have
+          simple functionality. The user will be able to login, register, sign-up. Then they will pre presented with a home page where
+          they can look through workouts that are available. They will have the ability to go through workouts and add them to their
+          own workout list. Some other functionality will be a calorie calculator and a BMI calculator. The user will be able to go to their profile and 
+          set goals they have in mind for their journey. I am also planning on adding in a Leaderboard where people can compete with others
+          on different categories.
+        </p>
+    </div>
+    <div class="col-md-4 WorkExpierience" id="WorkExpierience">
+        <h1 class="Title1 font-weight-bold text-center">Work Experience</h1>
+        <p class="text-center"> Department Of Agriculture, Food and the Marine (DAFM) Jan-2022 - July-2022</p>
+        <p>For third year I did my work experience for DAFM. During my time there i got to experience how my skills I have learned in college will be used outside
+          in a work environment. I was assigned to the website section, where we would get tickets from different companies related to DAFM and make changes to
+          their websites. I used HTML, CSS, JavaScript while working there. I got to also work backend making changes that were required. I was presented with
+          an amazing opertunity to create a demo website for one of the companies as they were looking for a new website due to their original one being outdated.
+        </p>
+    </div>
+    <div class="col-md-4 Results" id="results">
+      <h1 class="Title1 font-weight-bold text-center">Results</h1>
+      <div class="panel panel-default" style="width: 800px;">
+        <div id="Tabs" role="tabpanel">
+            <ul class="nav nav-tabs center" role="tablist">
+                <li class="active"><a href="#1sty" role="tab" data-toggle="tab" style="margin: 0 2em 5em 0;">1st Year</a></li>
+                <li><a href="#2ndy" role="tab" data-toggle="tab" style="margin: 0 2em 5em 0;">2nd Year</a></li>
+                <li><a href="#3rdy" role="tab" data-toggle="tab" style="margin: 0 2em 5em 0;">3rd Year</a></li>
+                <li><a href="#4thy" role="tab" data-toggle="tab" style="margin: 0 2em 5em 0;">4th Year</a></li>
+            </ul>
+            <div class="tab-content" style="padding-top: 20px">
+                <div role="tabpanel" class="tab-pane active" id="1sty">
+                  <h4>1st Year Results:</h4>
+                  <ul>
+                    <li>Software Development 1: C</li>
+                    <li>Object Oriented Systems Analysis: C</li>
+                    <li>Statistics: C</li>
+                    <li>Software Development 2: C</li>
+                    <li>Social Media Communications: B</li>
+                    <li>Database Fundamentals: C</li>
+                    <li>Operating Syst Fundamentals: B</li>
+                    <li>Computer Architecture: B</li>
+                    <li>Visual Design & User Experience: B</li>
+                    <li>Business & Information System: B</li>
+                    <li>Discrete Mathematics 1: B</li>
+                    <li>Critical Skills Development: B</li>
+                  </ul>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="2ndy">
+                  <h4>2nd Year Results:</h4>
+                  <ul>
+                    <li>Software Development 4: B</li>
+                    <li>Project: B-</li>
+                    <li>Routing & Switching Essentials: C</li>
+                    <li>Management Science: B</li>
+                    <li>Database Admin & Analysis: C</li>
+                    <li>Information Security: C+</li>
+                    <li>Software Development 3: B+</li>
+                    <li>Software Qual Ass & Testing: C</li>
+                    <li>Network Fundementals: B</li>
+                    <li>Adv Database Technologies: C</li>
+                    <li>Discrete Mathematics 2: B</li>
+                    <li>Client side Web Development: B</li>
+                  </ul>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="3rdy">
+                  <h4>3rd Year Results:</h4>
+                  <li>EXPERIENTAL LEARNING: Pass</li>
+                  <li>Server-side Web Development: C</li>
+                  <li>Operating Systems: C</li>
+                  <li>Cloud Service & Distrib Comp: C</li>
+                  <li>Big Data Technologies: C</li>
+                  <li>Data Structures & Algorithms: C</li>
+                  <li>Data Analysis: C</li>
+               </div>
+               <div role="tabpanel" class="tab-pane" id="4thy">
+                <h4>4th Year Results:</h4>
+             </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="col-md-4 moreinfo" id="moreinfo">
+        <h1 class="Title1 font-weight-bold text-center">More Info</h1>
+        <ul>
+          <li><a class="font-weight-bold">Gaming: </a>I am a part of a large community of gamers who not only play games but actively participate in competitions.</li>
+          <li><a class="font-weight-bold">Gym: </a>I've lately started working out and have added more home gym equipment that I've used.</li>
+          <li><a class="font-weight-bold">Art: </a>I like to draw. I sketch a variety of subjects. I only lately began studying digital art.</li>
+          <li><a class="font-weight-bold">Reading: </a>I've always used reading as a method to unwind and have some quiet time.</li>
+          <li><a class="font-weight-bold">Cooking: </a>I like picking up new cooking techniques and learning new recipes</li>
+        </ul>
+  </div>
+<div>
+    <h1></h1>
+</div>
+
+<!-- -------------------------------- End Main Body -------------------------------- -->
+
+<!-- -------------------------------- Start Footer -------------------------------- -->
+
+<footer class="bg-dark text-center text-white">
+    <div class="container p-4">
+      <section class="footerbottom">
+        <div class="row center">
+          <div class="col-md-8">
+            <h5 class="text-uppercase">Contact</h5>
+            <ul>
+              <li>
+                <a class="text-white">Email: Viljamasgr@gmail.com</a>
+              </li>
+              <li>
+                <a class="text-white">Phone:+353 851581648</a>
+              </li>
+              <li>
+                <a class="text-white" href="https://www.linkedin.com/in/viljamas-grumadas-78b7621a2/">LinkedIn: Viljamas GR</a>
+              </li>
+            </ul>
+          </div>
+          <div class="">
+            <h5 class="text-uppercase">Socials</h5>
+            <ul>
+              <li>
+                <a href="https://www.instagram.com/william.019/" class="text-white">Instagram</a>
+              </li>
+              <li>
+                <a href="https://github.com/Viljamasgr" class="text-white">GitHub</a>
+              </li>
+              <li><a href="bootstrap.html" class="text-white">Bootstrap</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    </div>
+  </footer>
+
+  <!-- -------------------------------- End Footer -------------------------------- -->
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,0 +1,68 @@
+.carousel-inner {
+    position: absolute;
+    max-height: 300px;
+}
+.carousel-item{
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+}
+
+.carousel-indicators img {
+    position: relative;
+}
+
+.aboutme{
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+
+.title1{
+    text-align: center;
+}
+.pfp{
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.projects{
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+
+.WorkExpierience{
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+.navbar{
+    background-color: #CCCCCC;
+	  overflow: hidden;
+	  width: 500px;
+	  margin: auto;
+}
+html{scroll-behavior:smooth}
+
+.Results{
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+.moreinfo{
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
